@@ -13,8 +13,6 @@ import Big from "big.js"
 const privateKey = "";
 export async function getONFTs(account, collection, srcchain) {
 	try {
-		// const collection = useSelector(Collection);
-		// const srcchain = useSelector(SrcChain);
 		if (account == undefined) return;
 
 		const tokenContractAddress = COLLECTIONS[collection][srcchain].contractAddress;
@@ -62,11 +60,7 @@ export async function getONFTsByAccount(account, collection, srcchain) {
     for(let i = 0;i<resIds.length;i++){
         const tokenUri = await contract.methods.tokenURI(resIds[i]).call();
         const tokenId = resIds[i];
-        /* 
-        const res = await fetch( resUri, { method: 'Get' });
-        const resJson = await res.json();
-        console.log("res: ", resJson);
-        */
+
         items.push({
             name: collection + " " + tokenId,
             id: parseInt(tokenId),
@@ -80,7 +74,6 @@ export async function getONFTsByAccount(account, collection, srcchain) {
 export async function sendONFT(account, collection, srcchain, dstchain, tokenId) {
 	try {
 		// const collection = useSelector(Collection);
-		// const srcchain = useSelector(srcChain);
 		// const dstchain = useSelector(dstchain);
 		if(account == undefined) return;
 
