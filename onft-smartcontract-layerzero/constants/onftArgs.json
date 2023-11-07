@@ -1,0 +1,12 @@
+{
+"optimism-goerli": {"startMintId": 1,"endMintId": 100},
+"polygon": {"startMintId": 1,"endMintId": 100},
+"optimism": {"startMintId": 101,"endMintId": 200},
+"bsc": {"startMintId": 201,"endMintId": 300},
+"base": {"startMintId": 301,"endMintId": 400},
+"zksync": {"startMintId": 401,"endMintId": 500},
+"mantle": {"startMintId": 501,"endMintId": 600},
+"polygon-zkevm": {"startMintId": 601,"endMintId": 700},
+"linea": {"startMintId": 701,"endMintId": 800},
+"":{}
+}
